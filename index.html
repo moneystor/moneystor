@@ -1,11 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Free Website</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>₹40 UPI Cash Offer</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background: white;
+      width: 90%;
+      max-width: 400px;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    button {
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      color: white;
+      padding: 12px 0;
+      border: none;
+      width: 100%;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    ul {
+      text-align: left;
+      margin-top: 20px;
+      padding-left: 18px;
+      color: #555;
+      font-size: 14px;
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 13px;
+      color: #eee;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-  <h1>স্বাগতম MoneyStor-এ</h1>
-  <p>অফার দেখুন, শেয়ার করুন, ইনকাম করুন!</p>
+  <div class="container">
+    <h2>Register & Deposit<br>Get ₹40 UPI Cash Instant</h2>
+    <input type="text" id="upiId" placeholder="Enter Your UPI ID" />
+    <button onclick="submitUPI()">Submit</button>
+
+    <ul>
+      <li>1. Enter UPI ID and click Submit</li>
+      <li>2. Install & Open App (₹1 Tracking)</li>
+      <li>3. Register & Deposit</li>
+      <li>4. Get ₹40 UPI Cash</li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    Payment Type: UPI<br>
+    Payment Time: Instant
+  </div>
+
+  <script>
+    function submitUPI() {
+      const upi = document.getElementById("upiId").value;
+      if (!upi) {
+        alert("Please enter your UPI ID");
+      } else {
+        alert("UPI ID submitted: " + upi);
+        // Backend integration can go here
+      }
+    }
+  </script>
 </body>
 </html>
